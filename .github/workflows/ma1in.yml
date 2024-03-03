@@ -1,8 +1,8 @@
-name: twrp prebuilts build process
 
 on:
-  watch:
-    types: [started]
+  on:
+  push:
+    branches: [ main ]
 
 env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
