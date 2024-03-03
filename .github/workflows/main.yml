@@ -1,18 +1,8 @@
- name: Building recovery
-
-on:
-#  release:
-#    types: [published]
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - '.config'
-#  schedule:
-#    - cron: 0 8 * * 5
-  watch:
-    types: [started]
-
+ name: Building 
+ on:
+ on:
+  push:
+    branches: [ main ]
 env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
   DEVICE: omni_d2s-eng
