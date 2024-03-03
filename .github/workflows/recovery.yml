@@ -1,17 +1,14 @@
-name: Building recovery
-
-on:
-#  release:
-#    types: [published]
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - '.config'
-#  schedule:
-#    - cron: 0 8 * * 5
-  watch:
-    types: [started]
+name: Building 
+ on:
+  push:
+    branches: [ main ]
+env:
+  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
+  DEVICE: omni_d2s-eng
+  DT_LINK: https://github.com/ianmacd/d2s
+  DT_PATH: device/samsung/d2s
+  TARGET: recoveryimage
+  TZ: Asia/Kolkata
 
 env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
