@@ -15,7 +15,7 @@ on:
 
 env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
-  DEVICE: omni_d2s-eng
+  DEVICE: d2s
   DT_LINK: https://github.com/ianmacd/d2s
   DT_PATH: device/samsung/d2s
   TARGET: recoveryimage
