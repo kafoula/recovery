@@ -16,7 +16,7 @@ on:
 env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
   DEVICE: d2s
-  DT_LINK: https://github.com/ianmacd/d2s
+  DT_LINK: https://github.com/kafoula/android_vendor_twrp.git
   DT_PATH: device/samsung/d2s
   TARGET: recoveryimage
   TZ: Asia/Kolkata
