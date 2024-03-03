@@ -1,6 +1,5 @@
  name: Building 
  on:
- on:
   push:
     branches: [ main ]
 env:
