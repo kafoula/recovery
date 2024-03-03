@@ -1,14 +1,9 @@
 name: Building 
- on:
+on:
   push:
-    branches: [ main ]
-env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
-  DEVICE: omni_d2s-eng
-  DT_LINK: https://github.com/ianmacd/d2s
-  DT_PATH: device/samsung/d2s
-  TARGET: recoveryimage
-  TZ: Asia/Kolkata
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
@@ -17,6 +12,7 @@ env:
   DT_PATH: device/samsung/d2s
   TARGET: recoveryimage
   TZ: Asia/Kolkata
+
 
 jobs:
   build:
